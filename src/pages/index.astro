@@ -1,0 +1,33 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { Image } from 'astro:assets'
+---
+
+<Layout title="Home">
+   <section class="flex gap-4 max-sm:flex-col max-sm:items-center max-sm:justify-center">
+        <div class="w-80 m-2">
+            <Image
+                src="/photo_portfolio.jpg"
+                alt=""
+                width={1253}
+                height={1677}
+                class="w-full h-full rounded"
+            >
+        </div>
+        <div class="text-center m-2">
+            <h1>Hi, My name is Cristian Barajas</h1>
+            <div class="flex gap-2">
+                <div>
+                    <span>Github</span>
+                </div>
+                <div>
+                    <span>LinkedIn</span>
+                </div>
+                <div>
+                    <span>Gmail</span>
+                </div>
+            </div>
+            
+        </div>
+   </section>
+</Layout>

@@ -1,0 +1,26 @@
+---
+const routes = [
+    { path: '/', title:'Home' },
+    { path: '/about', title: 'About me' },
+    { path: '/projects', title: 'Projects' },
+    { path: '/contact', title: 'Contact' },
+
+
+]
+---
+<nav class="w-full flex justify-center">
+    <ul class="flex gap-3">
+        {
+            routes.map(({path,title}) => (
+                <li>
+                    <a
+                        href={path}
+                        class="text-xl hover:border-b-4 border-black transition-all duration-75"
+                    >
+                        {title}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>

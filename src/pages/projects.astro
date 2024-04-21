@@ -1,0 +1,16 @@
+---
+import ProjectList from "@components/projects/ProjectList.astro"
+import ProjectItem from "@components/projects/ProjectItem.astro"
+import { PROJECTS } from "@lib/projects"
+import Layout from "@layouts/Layout.astro"
+---
+
+<Layout title="Projects">
+    <ProjectList>
+        {
+            PROJECTS.map((project)=>(
+                <ProjectItem {...project}/>
+            ))
+        }
+    </ProjectList>
+</Layout>

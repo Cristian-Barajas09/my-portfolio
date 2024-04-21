@@ -1,0 +1,20 @@
+---
+interface Props {
+    name: string
+    description: string
+    url: string
+}
+const {name,description,url} = Astro.props
+---
+
+<li class="flex flex-wrap justify-between bg-gray-100m-2">
+    <span class="w-full">
+        {name}
+    </span>
+    <p>
+        {description}
+    </p>
+    <a href={url} target="_blank">
+        View Project
+    </a>
+</li>
